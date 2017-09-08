@@ -42,6 +42,7 @@ INDEX - Landing Page
 -Render index.ejs, home page, bare bone simple
 
 */
+console.log(process.env.GMAILPASSWORD);
 
 app.get("/", function(req, res) {
   res.render("index"); //render index.ejs
