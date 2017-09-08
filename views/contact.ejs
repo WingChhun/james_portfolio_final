@@ -1,0 +1,46 @@
+<% include partials/header.ejs%>
+  <section id="section-form">
+
+    <div class="container">
+
+      <% if(success && success.length > 0) {%>
+
+        <div class="alert alert-success" role="alert">
+          <strong>  <%=success %> </strong>
+        </div>
+        <% } %>
+          <% if(error && error.length >0){ %>
+            <div class="alert alert-danger" role="alert">
+              <strong><%=error %> </strong>
+            </div>
+            <% }%>
+
+    </div>
+
+    </div>
+    <div class="row"> <a href="/"><i class = "fa fa-times-circle fa-2x"></i></a>
+      <h2>Cool, just a few questions.</h2>
+      <p>After making contact with me and introducing yourself through email, I will be sure to contact you as soon as possible, expect to hear from within 1-2 days or so.</p>
+      <form action="/contact" method="POST">
+        <div class="row">
+          <div class="col span-1-of-2">
+            <input type="text" name="name" placeholder="Name"> </div>
+          <div class="col span-1-of-2">
+            <input type="text" name="email" placeholder="Email address"> </div>
+        </div>
+        <!-- row-->
+        <div class="row">
+          <div class="col span-1-of-2">
+            <input type="text" name="phone" placeholder="Phone number"> </div>
+          <div class="col span-1-of-2">
+            <input type="text" name="subject" placeholder="Subject"> </div>
+        </div>
+        <!-- row-->
+        <div class="row">
+          <textarea name="message" id="message-box" cols="40" rows="10" placeholder="Introduce yourself, and briefly describe what are the reasons for contacting me? What kind of project do you need me to work on? How can I help? Please take your time."></textarea>
+        </div>
+        <input type="submit" value="submit"> </form>
+      <!-- FORM TO SUBMIT NODEMAILER-->
+    </div>
+  </section>
+  <% include partials/footer.ejs%>

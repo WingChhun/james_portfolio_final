@@ -1,0 +1,101 @@
+#section-form {
+  text-align: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 80px 20px;
+  background-color: #3f4d52;
+}
+
+a {
+  text-decoration: none;
+}
+
+#section-form .fa-times-circle {
+  float: right;
+  color: black;
+  text-decoration: none;
+}
+
+#section-form .fa-times-circle:hover {
+  color: #10DBDA;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+#section-form .row {
+  max-width: 900px;
+}
+
+#section-form h2 {
+  padding-top: 35px;
+  display: block;
+  color: white;
+  font-weight: 700;
+  letter-spacing: -.01rem;
+  padding-bottom: 10px;
+}
+
+#section-form p {
+  padding: 5px 10px;
+  color: white;
+}
+
+form {
+  padding: 35px 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #10DBDA;
+  ;
+  background-color: #3f4d52;
+}
+
+textarea {
+  background-color: #3f4d52;
+  border: 2px solid #10DBDA;
+  ;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  width: 85%;
+}
+
+input[type=text] {
+  color: white;
+}
+
+input[type=submit] {
+  margin-top: 1.2rem;
+  padding: 0.5rem;
+  width: 120px;
+  text-transform: uppercase;
+  color: #10DBDA;
+  ;
+  border-radius: 50px;
+  border-color: #10DBDA;
+  transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+input[type=submit]:hover {
+  color: black;
+  border-color: black;
+  background-color: #10DBDA;
+}
+
+.alert {
+  padding: 25px 0;
+}
+
+.alert-success {
+  color: #6BB4C4;
+  background-color: #DFF0D8;
+}
+
+.alert-danger {
+  color: #B25247;
+  background-color: #F2DEDE;
+}
