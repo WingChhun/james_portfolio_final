@@ -1,9 +1,10 @@
 #section-form {
   text-align: center;
   background-size: cover;
-  height: 100vh;
-  padding: 80px 20px;
+  margin: 0 auto;
   background-color: #3f4d52;
+  padding: 150px 0;
+  display: block;
 }
 
 a {
@@ -22,8 +23,13 @@ a {
   text-decoration: none;
 }
 
-#section-form .row {
+#section-form .row, .row2 {
   max-width: 900px;
+  margin: 0 auto;
+}
+
+.row2 {
+  padding-bottom: 20px;
 }
 
 #section-form h2 {
@@ -41,13 +47,14 @@ a {
 }
 
 form {
-  padding: 35px 10px;
+  padding: 20px 10px;
   max-width: 700px;
   margin: 0 auto;
   font-size: 16px;
 }
 
 input {
+  margin: 7px 0;
   padding: 10px;
   border: 2px solid #10DBDA;
   ;
@@ -62,6 +69,13 @@ textarea {
   padding: 10px;
   margin-top: 20px;
   width: 85%;
+}
+
+.notification {
+  color: gray;
+  font-size: 14px;
+  padding: 0;
+  margin-top: -10px;
 }
 
 input[type=text] {
@@ -98,4 +112,34 @@ input[type=submit]:hover {
 .alert-danger {
   color: #B25247;
   background-color: #F2DEDE;
+}
+
+@media screen and (max-width:640px) {
+  #section-form .fa-times-circle {
+    float: right;
+    color: black;
+    font-size: 200%;
+    text-decoration: none;
+  }
+  #section-form .fa-times-circle:hover {
+    color: #10DBDA;
+    font-size: 200%;
+    text-decoration: none;
+  }
+  #section-form .row, .row2 {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .row2 {
+    padding-right: 5px;
+  }
+  #section-form h2 {
+    padding-top: 20px;
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 140%;
+    letter-spacing: -.01rem;
+    padding-bottom: 10px;
+  }
 }

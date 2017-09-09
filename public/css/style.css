@@ -27,6 +27,7 @@ hr {
 body, html {
   font-family: "Montserrat", sans-serif;
   margin: 0 auto;
+  padding: 0 auto;
   font-size: 20px;
   background: url("../img/subtle_white_feathers.png");
 }
@@ -211,7 +212,7 @@ header {
   color: #d4d4d4;
   text-align: center;
   position: absolute;
-  top: 95%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: color 0.4s;
@@ -535,6 +536,10 @@ footer .fa {
   transition: 0.3s;
 }
 
+.fa-facebook-square, .fa-instagram, .fa-codepen, .fa-linkedin-square, .fa-github-square {
+  font-size: 180%;
+}
+
 .fa-facebook-square:hover {
   color: #3b5998;
 }
@@ -573,7 +578,7 @@ footer p {
 .fa-chevron-circle-up {
   margin-top: 35px;
   margin-right: 18px;
-  font-size: 220%;
+  font-size: 200%;
   color: rgba(22, 215, 235, 0.5);
   transition: 0.2s;
 }
@@ -608,11 +613,14 @@ footer p {
     font-size: 18px;
   }
   #section-projects, #section-personal-projects, #section-contact, #section-expertise {
-    padding: 50px 0;
+    padding: 50px 5px;
     text-align: center;
   }
   p {
     font-size: 16px;
+  }
+  .fa-facebook-square, .fa-instagram, .fa-codepen, .fa-linkedin-square, .fa-github-square {
+    font-size: 150%;
   }
 }
 
@@ -629,7 +637,7 @@ footer p {
     margin: 0.6rem auto;
   }
   .copyright {
-    font-size: 14px;
+    font-size: 12px;
   }
   .btn-scroll-about {
     font-size: 14px;
@@ -658,6 +666,12 @@ footer p {
     display: inline-block;
     visibility: visible;
   }
+  .move {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+  }
   header {
     overflow: hidden;
   }
@@ -669,6 +683,7 @@ footer p {
     visibility: hidden;
     transition: height .5s ease=out;
     overflow: hidden;
+    display: block;
   }
   header nav ul.open {
     visibility: visible;
@@ -697,6 +712,12 @@ footer p {
   .btn-cta {
     padding: 8px 30px;
   }
+  h1 {
+    font-size: 140%;
+  }
+  .fa-facebook-square, .fa-instagram, .fa-codepen, .fa-linkedin-square, .fa-github-square {
+    font-size: 120%;
+  }
 }
 
 @media screen and (max-width:400px) {
@@ -706,5 +727,8 @@ footer p {
   .btn-visit {
     padding: 0.3rem;
     width: 50%;
+  }
+  #section-contact {
+    padding: 5px;
   }
 }
