@@ -20,6 +20,7 @@ $(document).ready(function() {
   $(".burger-nav").on("click", function() {
     $("header nav ul").toggleClass('open').delay(2000);
     $(".header-row").toggleClass('move');
+    $('.btn-scroll-about').toggleClass('move2');
   });
 
 });
