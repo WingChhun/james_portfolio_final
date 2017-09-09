@@ -10,6 +10,7 @@ var express = require("express"),
   empty = require("is-empty");
 
 
+
 //get and use packages
 //so far - express,, body-parser,  nodemailer connect-flash -ejs
 
@@ -43,8 +44,8 @@ ROUTES
 INDEX - Landing Page
 -Render index.ejs, home page, bare bone simple
 
-*/
 
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 
 app.get("/", function(req, res) {
   res.render("index"); //render index.ejs
