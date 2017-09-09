@@ -1,7 +1,7 @@
 <% include partials/header.ejs%>
   <section id="section-form">
 
-    <div class="container">
+    <div class="row">
 
       <% if(success && success.length > 0) {%>
 
@@ -18,7 +18,10 @@
     </div>
 
     </div>
-    <div class="row"> <a href="/"><i class = "fa fa-times-circle fa-2x"></i></a>
+    <div class="row2">
+      <a href="/"><i class = "fa fa-times-circle fa-2x"></i></a>
+    </div>
+    <div class="row">
       <h2>Cool, just a few questions.</h2>
       <p>After making contact with me and introducing yourself through email, I will be sure to contact you as soon as possible, expect to hear from within 1-2 days or so.</p>
       <form action="/contact" method="POST">
@@ -40,6 +43,7 @@
           <textarea name="message" id="message-box" cols="40" rows="10" placeholder="Introduce yourself, and briefly describe what are the reasons for contacting me? What kind of project do you need me to work on? How can I help? Please take your time."></textarea>
         </div>
         <input type="submit" value="submit"> </form>
+      <p class="notification">Required</p>
       <!-- FORM TO SUBMIT NODEMAILER-->
     </div>
   </section>
