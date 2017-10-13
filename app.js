@@ -92,7 +92,7 @@ app.post('/contact', function(req, res) {
     });
 
     var sender = req.body.name,
-      info = "Email Address: " + req.body.email + "\n\n Phone Number: " + req.body.phone + "\n\n Message: " + req.body.message;
+      info = "Name: " + req.body.name + "\nEmail Address: " + req.body.email + "\n\n Phone Number: " + req.body.phone + "\n\n Message: " + req.body.message;
     console.log(sender);
     //Content of mailn
     let HelperOptions = {
