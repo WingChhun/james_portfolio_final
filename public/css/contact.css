@@ -3,7 +3,7 @@
   background-size: cover;
   margin: 0 auto;
   background-color: #3f4d52;
-  padding: 150px 0;
+  padding: 130px 5px;
   display: block;
 }
 
@@ -82,6 +82,12 @@ input[type=text] {
   color: white;
 }
 
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #9ff0f0;
+  ;
+}
+
 input[type=submit] {
   margin-top: 1.2rem;
   padding: 0.5rem;
@@ -114,12 +120,21 @@ input[type=submit]:hover {
   background-color: #F2DEDE;
 }
 
+@media screen and (max-width:900px) {
+  #section-form {
+    padding: 45px 5px;
+  }
+}
+
 @media screen and (max-width:640px) {
   #section-form .fa-times-circle {
     float: right;
     color: black;
     font-size: 200%;
     text-decoration: none;
+  }
+  #section-form {
+    padding: 25px 5px;
   }
   #section-form .fa-times-circle:hover {
     color: #10DBDA;
@@ -141,5 +156,19 @@ input[type=submit]:hover {
     font-size: 140%;
     letter-spacing: -.01rem;
     padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #section-form .span-1-of-2 {
+    width: 47.5%;
+  }
+  #section-form {
+    padding: 25px 5px;
+    overflow-x: hidden;
+    text-align: center;
+  }
+  textarea {
+    width: 95%;
   }
 }

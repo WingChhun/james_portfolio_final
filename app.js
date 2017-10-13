@@ -83,8 +83,8 @@ app.post('/contact', function(req, res) {
       secure: false,
       port: 25,
       auth: {
-        user: process.env.GMAIL_EMAIL,
-        pass: process.env.GMAILPASSWORD
+        user: process.env.nodeMailer_EMAIL,
+        pass: process.env.nodeMailer_PASSWORD
       },
       tls: {
         rejectUnauthorized: false
