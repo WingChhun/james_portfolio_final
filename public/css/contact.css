@@ -142,7 +142,7 @@ input[type=submit]:hover {
     text-decoration: none;
   }
   #section-form .row, .row2 {
-    max-width: 640px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .row2 {
@@ -163,12 +163,19 @@ input[type=submit]:hover {
   #section-form .span-1-of-2 {
     width: 47.5%;
   }
+  #section-form .row, .row2 {
+    max-width: 100vw;
+  }
   #section-form {
     padding: 25px 5px;
     overflow-x: hidden;
     text-align: center;
   }
+  input[type=text] {
+    width: 98.5%;
+    margin-left: 5%;
+  }
   textarea {
-    width: 95%;
+    width: 99%;
   }
 }
